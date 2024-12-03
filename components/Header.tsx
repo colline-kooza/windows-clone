@@ -3,6 +3,7 @@
 import { Menu, ShoppingCart, User } from 'lucide-react'
 import { Input } from "@/components/ui/input"
 import Link from "next/link"
+import { ModeToggle } from './mode-toggle'
 
 export default function Header() {
   return (
@@ -39,12 +40,12 @@ export default function Header() {
           
           <button className="flex items-center gap-1 p-2 hover:bg-white/10 rounded-md">
             <ShoppingCart className="h-6 w-6" />
-            <span className="text-sm hidden sm:inline-block">0 total</span>
           </button>
           
-          <button className="p-2 hover:bg-white/10 rounded-md">
+          {/* <button className="p-2 hover:bg-white/10 rounded-md">
             <User className="h-6 w-6" />
-          </button>
+          </button> */}
+          <ModeToggle />
         </div>
       </div>
     </header>
