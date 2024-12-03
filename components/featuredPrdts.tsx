@@ -43,8 +43,8 @@ const products = [
 
 export default function FeaturedPrdts() {
   return (
-    <div className="w-full lg:px-4 py-6 mt-8">
-      <div className="flex items-center justify-between mb-4">
+    <div className="w-full px-2 lg:px-4 py-6 mt-8">
+      <div className="flex items-center justify-between mb-4 px-2">
         <h2 className="text-xl font-semibold">Featured Products</h2>
         <button className="text-primary text-sm">See more →</button>
       </div>

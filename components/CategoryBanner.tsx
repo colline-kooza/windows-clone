@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { Button } from './ui/button'
 
 export default function CategoryBanner() {
   return (
     <div className="w-full px-4 py-4 md:py-4 lg:py-4">
-      <div className="relative bg-gradient-to-br from-[#f69fb1] to-[#ff7db3] rounded-2xl overflow-hidden shadow-2xl">
+      <div className="relative bg-gradient-to-br from-[#6c1143] to-[#6c1143] rounded-2xl overflow-hidden shadow-2xl">
         {/* Animated Background Pattern */}
         <div className="absolute top-0 right-0 opacity-20 animate-pulse">
           <svg width="200" height="200" viewBox="0 0 200 200" fill="none" className="text-white">
@@ -22,37 +23,26 @@ export default function CategoryBanner() {
                 Your Essentials From<br />
                 Our Market!
               </h2>
-              
+              <p className='text-md text-gray-200'>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
               {/* App Store Buttons with hover effects */}
               <div className="flex justify-center lg:justify-start space-x-4 mt-3">
-                <Link href="#" className="transition-transform hover:scale-105">
-                  <Image
-                    src="/go.png"
-                    alt="Get it on Google Play"
-                    width={400}
-                    height={400}
-                    className="h-28 w-auto object-contain"
-                  />
-                </Link>
-                <Link href="#" className="transition-transform hover:scale-105">
-                  <Image
-                    src="/app.png"
-                    alt="Download on the App Store"
-                    width={400}
-                    height={400}
-                    className="h-28 w-auto object-contain"
-                  />
-                </Link>
+              <Button
+                className="bg-[#bbea70] text-black hover:bg-[#8a9d3d] hover:text-white 
+                           transition-all duration-300 ease-in-out transform hover:scale-105"
+                size="lg"
+              >
+                Shop now
+              </Button>
               </div>
             </div>
 
             {/* Image with subtle animation */}
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex justify-center lg:justify-end cursor-pointer">
               <Image
                 src="/top.png"
                 alt="Delivery person with groceries"
-                width={500}
-                height={400}
+                width={700}
+                height={700}
                 className="w-full max-w-md h-auto object-contain transform transition-transform hover:scale-105"
                 priority
               />

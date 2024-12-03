@@ -8,7 +8,7 @@ export default async function HomeLayout({
   children: ReactNode;
 }) {
   return (
-    <div className=" w-full lg:max-w-[1450px] min-h-screen mx-auto flex flex-col ">
+    <div className=" w-full lg:max-w-[1400px] min-h-screen mx-auto flex flex-col ">
       <Header />
       <div>
         {children}

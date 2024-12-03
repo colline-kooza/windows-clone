@@ -1,3 +1,4 @@
+import { ProductProps } from "@/types/types"
 import { PrdtDetailed } from "./prdtDetailed"
 
 // const products = [
@@ -77,7 +78,7 @@ import { PrdtDetailed } from "./prdtDetailed"
 
 export default function ProductContainer({products}:{products:any[]}) {
   return (
-    <div className="w-full lg:px-4 py-6 mt-8">
+    <div className="w-full lg:px-4 px-2 py-6 mt-8">
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-xl font-semibold">You might need</h2>
         <button className="text-primary text-sm">See more →</button>

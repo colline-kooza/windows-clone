@@ -13,16 +13,18 @@ export default async function  HeroSection() {
   const products: Product[] = (await getAllProducts()) || [];
   return (
   <div>
-     <div className="relative bg-[#064c4f] overflow-hidden mt-4 rounded">
+     <div style={{
+   clipPath: "ellipse(150% 100% at 50% 0%)",
+}} className="relative bg-[#064c4f] overflow-hidden mt-2 lg:mt-4 lg:rounded-lg">
       <div className="container mx-auto px-4 py-10 md:py-14">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Text Content */}
           <div className="space-y-8 text-white z-10 relative">
             <div className="space-y-4">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#fbf8e5] mb-3
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-loose text-[#fbf8e5] mb-3
                             relative">
                 {/* Decorative elements */}
-                <span className="absolute -left-1 top-0 text-[#bbea70] opacity-50 text-2xl leading-10">
+                <span className="absolute -left-10 top-0 text-[#bbea70] opacity-50 text-2xl leading-10">
                   ❖
                 </span>
                 We bring the store
